@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:backgroundTint="#FFF"
+        android:background="@drawable/ic_close" />
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Confirmation Required"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp"
+        app:typeface="ProximaNova-Regular.otf" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_paysummary"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:background="@drawable/billing_gradient_new"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dollor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_dollor"/>
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="MoonLight.otf"
+            android:id="@+id/title1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAY NOW"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/iv_dollor1"
+            android:textAllCaps="true"
+            />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="MoonLight.otf"
+            android:id="@+id/tv_desc1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:text="Your next payment is due to be processed on 30 November 2017. "
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/iv_dollor1"
+            android:layout_below="@+id/title1"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_9sdp"
+            android:layout_toLeftOf="@+id/tv_available_dollor1" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="ProximaNova-regular.otf"
+            android:id="@+id/tv_available_dollor1"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_13sdp"
+            android:layout_alignParentRight="true"/>
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="MoonLight.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_9sdp"
+            android:layout_below="@+id/tv_available_dollor1"
+            android:textAllCaps="true"
+            android:id="@+id/cycle" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:background="@drawable/billing_gradient"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dollor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_dollor"/>
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="MoonLight.otf"
+            android:id="@+id/tv_bc"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BILLING SUMMARY"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/iv_dollor"
+            android:textAllCaps="true"
+            />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="MoonLight.otf"
+            android:id="@+id/tv_desc"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/iv_dollor"
+            android:layout_below="@+id/tv_bc"
+            android:textAllCaps="true"
+            android:text="Your next payment is due to be processed on 30 November 2017. "
+            android:textSize="@dimen/_9sdp"
+            android:layout_toLeftOf="@+id/tv_available_dollor" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="ProximaNova-regular.otf"
+            android:id="@+id/tv_available_dollor"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="USD 1.99 MTH"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textAllCaps="true"
+            android:gravity="right"
+            android:textSize="@dimen/_13sdp"
+            android:layout_alignParentRight="true"
+            />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            app:typeface="MoonLight.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_9sdp"
+            android:layout_below="@+id/tv_available_dollor"
+            android:textAllCaps="true"
+            android:id="@+id/fontTextView" />
+
+
+    </RelativeLayout>
+
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:text="So, what are you waiting for? Get involved!"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11sdp"
+        app:typeface="ProximaNova-Regular.otf" />
+
+    <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/activity_login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button_selector"
+
+        android:text="CONFIRM PAYMENT"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12sdp"/>
+
+
+</LinearLayout>

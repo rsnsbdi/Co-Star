@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/toolbar_news_detail" />
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.brightcove.player.view.BrightcoveExoPlayerVideoView
+            android:id="@+id/brightcove_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:orientation="horizontal"></LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/tv_total_love1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/image_detail"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/bluel"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <RelativeLayout
+                android:id="@+id/like"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_toLeftOf="@+id/tv_like"
+                    android:src="@drawable/ic_like_border" />
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:text="Like"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_11sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/tv_video_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:typeface="ProximaNova-Regular.otf" />
+
+        </RelativeLayout>
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_talent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:background="@drawable/videodetail_selector"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_9sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_video_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:textColor="#FF9B9B9B"
+            android:textSize="@dimen/_9sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

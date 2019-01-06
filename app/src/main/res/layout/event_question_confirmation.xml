@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/main_color"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/ic_close"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:background="@drawable/thanks_art"/>
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+        app:typeface="ProximaNova-Regular.otf"
+        android:text="You are on the waiting questionList!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@android:color/white"/>
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+        android:id="@+id/tv_message"
+        app:typeface="ProximaNova-Regular.otf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+        app:typeface="ProximaNova-Regular.otf"
+        android:text="If you miss out this time, don't worry, new events are scheduled all the time! Keep an eye out for your next chance to register."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@android:color/darker_gray"/>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:text="Report"
+            android:textColor="#080707"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/abusive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="#FFE44E3D"
+            android:gravity="center_horizontal"
+            android:hint="Abusive/Offensive content"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/harmful"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+
+            android:background="#FFE44E3D"
+            android:gravity="center_horizontal"
+            android:hint="Harmful Content"
+
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/nudity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+
+            android:background="#FFE44E3D"
+            android:gravity="center_horizontal"
+            android:hint=" Nudity or Pornography"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/hate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+
+            android:background="#FFE44E3D"
+            android:gravity="center_horizontal"
+            android:hint="Hate speech or symbol"
+
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="#FFE44E3D"
+            android:gravity="center_horizontal"
+            android:hint="Block comment author"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/ic_close"
+        android:backgroundTint="#080707"
+        android:padding="@dimen/_10sdp" />
+
+
+</RelativeLayout>

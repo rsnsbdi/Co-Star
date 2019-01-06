@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_gradient"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_9sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:src="@drawable/ic_arrow_back" />
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sign Up"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_20sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_head"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:padding="8dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileno"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="18dp">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/ed_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/rounded_corner_edittext"
+                    android:gravity="center_horizontal"
+                    android:hint="DATE OF BIRTH"
+                    android:maxLines="1"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="#FFF"
+                    android:textColorHint="#FFF"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_expand_more" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_dob"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/mobileno"
+                    android:background="@drawable/rounded_corner_edittext"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_12sdp"
+                    app:ccpDialog_textColor="@color/main_color"
+                    app:ccp_textGravity="CENTER"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_city"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="18dp">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/ed_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/rounded_corner_edittext"
+                    android:gravity="center_horizontal"
+                    android:hint="SELECT GENDER"
+                    android:maxLines="1"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="#FFF"
+                    android:textColorHint="#FFF"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_expand_more" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_gender"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="28dp">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/button_selector"
+                    android:enabled="false"
+                    android:shadowRadius="3"
+                    android:text="SIGN UP"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_terms_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerLayout"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_10sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_terms_condition">
+
+            <TextView
+                android:id="@+id/tv_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="."
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_35sdp" />
+
+            <TextView
+                android:id="@+id/tv_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_11"
+                android:gravity="center_vertical"
+                android:text="."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_35sdp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

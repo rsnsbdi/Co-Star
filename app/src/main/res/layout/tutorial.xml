@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/tutorial_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_190sdp"
+        app:ci_animator="@animator/noanimator"
+        app:ci_drawable="@drawable/redradious"
+        app:ci_drawable_unselected="@drawable/grayradious"
+        app:ci_height="@dimen/_7sdp"
+        app:ci_width="@dimen/_7sdp" />
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:drawableRight="@drawable/forward"
+        android:drawableTint="@color/white"
+        android:gravity="center_vertical"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"></com.costar.talkwithidol.ext.widgets.fonts.FontTextView>
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:drawableLeft="@drawable/backward"
+        android:drawableTint="@color/white"
+        android:gravity="center_vertical"
+        android:text="Prev"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone"></com.costar.talkwithidol.ext.widgets.fonts.FontTextView>
+</RelativeLayout>

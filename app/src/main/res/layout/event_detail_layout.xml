@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_news_detail" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/event_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    app:riv_border_color="#333333"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_46sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@drawable/eventup_selector"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                        android:id="@+id/event_date"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.21"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_24sdp"
+                        android:textStyle="bold"
+                        app:typeface="ProximaNova-Regular.otf" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:background="@android:color/white"
+
+                        />
+
+                    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                        android:id="@+id/event_month_year"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/_1sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_8sdp"
+                        app:typeface="ProximaNova-Regular.otf" />
+
+                    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                        android:id="@+id/event_time"
+                        android:layout_width="@dimen/_46sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/eventdown_selector"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_8sdp"
+                        app:typeface="ProximaNova-Regular.otf" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/image_detail"
+                    android:padding="@dimen/_6sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <ImageView
+                    android:id="@+id/image_detail"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:src="@drawable/ic_event_added_watchlist"
+                    android:tint="#FF41CBE6" />" />
+            </RelativeLayout>
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/event_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:textColor="#FF9B9B9B"
+                android:textSize="@dimen/_9sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                android:id="@+id/register_event"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

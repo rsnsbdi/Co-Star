@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/signup_gradient"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:hint="Enter your information"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+            android:id="@+id/cardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/rl_dob"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:gravity="center_horizontal"
+            android:hint="CREDIT CARD NUMBER"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+            android:id="@+id/cardName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:gravity="center_horizontal"
+            android:hint="CARD NAME"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_28sdp"
+            android:orientation="horizontal">
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+                android:id="@+id/expiry_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_edittext"
+                android:gravity="center_horizontal"
+                android:hint="MONTH"
+                android:inputType="number"
+
+                android:maxLength="2"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_12sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+                android:id="@+id/expiry_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_edittext"
+                android:gravity="center_horizontal"
+                android:hint="YEAR"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:maxLength="4"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_12sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+                android:id="@+id/ccv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_edittext"
+                android:gravity="center_horizontal"
+                android:hint="CCV"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_12sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp">
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/button_selector"
+                android:shadowRadius="3"
+                android:text="Pay Now"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color"
+            android:orientation="vertical">
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Camera"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18sdp"
+                app:typeface="MoonLight.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="You must be able to see yourself below to be the part of this event."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <TextureView
+                android:id="@+id/camerapreview"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Microphone test"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Speak into your microphone, the test bar must reach the 50% bar to be part of this event"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.SoundLevelView
+                android:id="@+id/vol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="instruction"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/fontTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="Here are some tips before beng part of an CoStar conference."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textSize="@dimen/_12sdp">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/videodetail_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check your audio is switched on and working, wnat to make sure you’re heard."
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/videodetail_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="2"
+                    android:textColor="@android:color/white"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ensure your camera is switched on and working, so you can speak face-to-face."
+
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/videodetail_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="3"
+                    android:textColor="@android:color/white"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make sure to practice your approved question so you sound like a pro."
+
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+
+            </LinearLayout>
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="The moderator will un-mute and introduce you when its your time to ask your question , so take a deep breath and have fun."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="You are question 6 out of 7 questions. After David has asked their question, you will be next up."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                android:id="@+id/join_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/button_selector"
+                android:backgroundTint="@color/red1"
+                android:text="JOIN THIS EVENT"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

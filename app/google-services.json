@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "517064050520",
+    "firebase_url": "https://costar-app.firebaseio.com",
+    "project_id": "costar-app",
+    "storage_bucket": "costar-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517064050520:android:77cc9a8e1f28831b",
+        "android_client_info": {
+          "package_name": "com.padlokt.talkwithidol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517064050520-31dtl5hliaakrj6rfcmljbk9bmlhecr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4GUWWUdETSvhCVBy1yKzF_mIpGqqOKmI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517064050520:android:9fd386fd15fc2be0",
+        "android_client_info": {
+          "package_name": "com.padlokt.pexip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517064050520-31dtl5hliaakrj6rfcmljbk9bmlhecr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4GUWWUdETSvhCVBy1yKzF_mIpGqqOKmI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517064050520:android:4e3dea510532115a",
+        "android_client_info": {
+          "package_name": "com.costar.talkwithidol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517064050520-31dtl5hliaakrj6rfcmljbk9bmlhecr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4GUWWUdETSvhCVBy1yKzF_mIpGqqOKmI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

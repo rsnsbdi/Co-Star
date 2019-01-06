@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1D1D1D">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ic_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/_22sdp"
+                android:background="@drawable/ic_close" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <com.brightcove.player.view.BrightcoveExoPlayerVideoView
+                android:id="@+id/brightcove_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_centerInParent="true"/>
+
+
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_9sdp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/image_detail"
+                    android:padding="@dimen/_6sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <ImageView
+                    android:id="@+id/image_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_5sdp"/>
+            </RelativeLayout>
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/event_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:textColor="#FF9B9B9B"
+                android:textSize="@dimen/_9sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/image_detail"
+                android:padding="@dimen/_6sdp"
+                android:text="your question"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:textAllCaps="true"
+                app:typeface="MoonBold.otf" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CoStar</string>
+
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="send_confirmation">Send Confirmation</string>
+    <string name="sierra_solutions">\@2017 Padlokt pvt ltd.</string>
+    <string name="ewell">eWell</string>
+    <string name="app">App</string>
+    <string name="forgot_password"><u>Forgot password</u></string>
+    <string name="steps">Steps</string>
+
+    <string name="splash">CELEBRITIES-CLOSER</string>
+
+
+
+    <!--discover-->
+    <string name="events">EVENTS</string>
+    <string name="channels">CHANNELS</string>
+    <string name="community">COMMUNITY</string>
+    <string name="videos">VIDEOS</string>
+    <string name="news">NEWS</string>
+    <string name="my_watchlist">MY WATCHLIST</string>
+
+
+    <string-array name="option">
+        <item>Take from Camera</item>
+        <item>Select from Gallery</item>
+    </string-array>
+
+    <string name="choose_option">Please choose the image</string>
+    <string name="select_option">Select Option</string>
+
+
+    <string name="register_event">REGISTER FOR THIS EVENT</string>
+    <string name="t1">Subscribe to your favorite idols CoStar \n channel to meet them live via video and get \n exclusive access to behind-the-scenes \n content, their inner sanctum and more.</string>
+    <string name="t2">Join FanCasts on CoStar to meet, hang out \n and talk with your favorite idols live via video. \n Just submit your questions to register so you \n can take part and have fun. </string>
+    <string name="t3">Watch all FanCasts and behind-the-scenes \n footage from your favorite idols via StarCast - \n streamed live from location or view on \n demand through CoStars video library.</string>
+    <string name="t4">Get the insiders view to learn more about your \n favorite celebrities real life with CoStars \n Insider Series monthly episodes, up-to-date \n news and community forum.</string>
+    <string name="are_you_sure_you_want_to_block_this_user">Are you sure you want to \n block this user?</string>
+    <string name="t4h">Exclusive Videos, News and \n Community</string>
+</resources>

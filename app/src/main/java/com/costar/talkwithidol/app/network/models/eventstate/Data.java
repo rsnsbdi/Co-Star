@@ -1,0 +1,69 @@
+
+package com.costar.talkwithidol.app.network.models.eventstate;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Data implements Parcelable
+{
+
+    @SerializedName("state")
+    @Expose
+    private String state;
+    @SerializedName("mode")
+    @Expose
+    private String mode;
+    public final static Creator<Data> CREATOR = new Creator<Data>() {
+
+
+        @SuppressWarnings({
+            "unchecked"
+        })
+        public Data createFromParcel(Parcel in) {
+            return new Data(in);
+        }
+
+        public Data[] newArray(int size) {
+            return (new Data[size]);
+        }
+
+    }
+    ;
+
+    protected Data(Parcel in) {
+        this.state = ((String) in.readValue((String.class.getClassLoader())));
+        this.mode = ((String) in.readValue((String.class.getClassLoader())));
+    }
+
+    public Data() {
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getMode() {
+        return mode;
+    }
+
+    public void setMode(String mode) {
+        this.mode = mode;
+    }
+
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeValue(state);
+        dest.writeValue(mode);
+    }
+
+    public int describeContents() {
+        return  0;
+    }
+
+}

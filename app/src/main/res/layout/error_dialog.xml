@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_tap"
+    android:background="@color/main_color"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+        android:id="@+id/tv_msesage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:text="Couldnt Load the content please try again"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        app:typeface="ProximaNova-Regular.otf" />
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_msesage"
+        android:text="Please tap to refresh"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        app:typeface="ProximaNova-Regular.otf" />
+
+
+</RelativeLayout>

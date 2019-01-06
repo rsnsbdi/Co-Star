@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/news_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_news_detail" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/news_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:scaleType="fitCenter"
+                    app:riv_border_color="#333333"
+                    app:riv_corner_radius="5dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/tv_total_loveN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_60sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/bluel"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <RelativeLayout
+                    android:id="@+id/like"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/iv_like"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_toLeftOf="@+id/tv_like"
+                        android:src="@drawable/ic_like_border" />
+
+                    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                        android:id="@+id/tv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:text="Like"
+                        android:textColor="#FF4A4A4A"
+                        android:textSize="@dimen/_11sdp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/tv_talent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_6sdp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_9sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/tv_news_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_11sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

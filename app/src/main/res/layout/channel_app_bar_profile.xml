@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_210sdp"
+    android:elevation="@dimen/_2sdp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_210sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_channel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp"
+                android:background="@drawable/channel_detail_image_gradient" />
+
+
+        </RelativeLayout>
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_channel_name"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_suscribe"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toStartOf="@+id/iv_suscribe"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_22sdp"
+            app:typeface="MoonLight.otf" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_available_dollor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_suscribe"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="$5.99"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18sdp"
+            android:visibility="gone"
+            app:typeface="ProximaNova-regular.otf" />
+
+        <ImageView
+            android:id="@+id/iv_suscribe"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/subscribe_cta"
+            android:visibility="gone" />
+
+        <include layout="@layout/toolbar_channel" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

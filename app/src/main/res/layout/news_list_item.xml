@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/main_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_detail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/news_gradient">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/news_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:riv_corner_radius_bottom_left="3dp"
+            app:riv_corner_radius_top_left="3dp"
+            app:riv_oval="false" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_news_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+
+            android:layout_toLeftOf="@+id/tv_date_time"
+            android:layout_toRightOf="@id/news_image"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="MARCUS ROWE"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_talent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_news_name"
+            android:layout_below="@+id/tv_news_name"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:textColor="@android:color/black"
+
+            android:text="Leonardo"
+            android:textSize="@dimen/_9sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="right"
+            android:text="03 OCT 2017"
+            android:textSize="@dimen/_8sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_news_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_news_name"
+            android:layout_alignStart="@+id/tv_news_name"
+            android:layout_below="@+id/tv_talent_name"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/iv_like"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="Althusser Competing Interpellations And The Third Text"
+            android:textSize="@dimen/_11sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <LinearLayout
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_date_time"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/like_icon"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_like_border" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_detail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_detail1"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:background="@drawable/news_gradient">
+
+        <ImageView
+            android:id="@+id/news_image1"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_news_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/tv_date_time1"
+            android:layout_toRightOf="@id/news_image1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="MARCUS ROWE"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_talent_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_news_name1"
+            android:layout_below="@+id/tv_news_name1"
+            android:paddingLeft="@dimen/_6sdp"
+            android:text="Leonardo"
+            android:paddingRight="@dimen/_6sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_9sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_date_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="right"
+            android:text="03 OCT 2017"
+            android:textSize="@dimen/_8sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/tv_news_description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_news_name1"
+            android:layout_alignStart="@+id/tv_news_name1"
+            android:layout_below="@+id/tv_talent_name1"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/iv_like1"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="Althusser Competing Interpellations And The Third Text"
+            android:textSize="@dimen/_11sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <LinearLayout
+            android:id="@+id/iv_like1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_date_time1"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/like_icon1"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_like_border" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

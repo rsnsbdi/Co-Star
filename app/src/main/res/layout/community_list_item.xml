@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/detail_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/news_gradient"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rv_profile"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/circular_shape">
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_auther_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        app:riv_oval="true"
+
+                        />
+                </RelativeLayout>
+
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/tv_authername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/rv_profile"
+                    android:text="Kishor Maharjan"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/tv_talent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_authername"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:layout_toRightOf="@+id/rv_profile"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:textSize="@dimen/_9sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <TextView
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_authername"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/tv_talent_name"
+                    android:text="17 Oct 2017"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_8sdp" />
+
+                <ImageView
+                    android:id="@+id/img_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:src="@drawable/ic_coommunity_more"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:background="@color/white">
+
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/description_noimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="#FF000000"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="visible"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:scaleType="centerCrop"
+                    app:riv_border_color="#333333"
+                    app:riv_corner_radius="0dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+            </RelativeLayout>
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/tv_total_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/rv_profile"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:textColor="@color/bluel"
+                android:textSize="@dimen/_9sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>-->
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/tv_community_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_9sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+            <LinearLayout
+                android:id="@+id/layout_comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+
+                    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                        android:id="@+id/tv_commenter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_recent_comment"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text="Kishor Maharjan"
+                        android:textColor="#FF4A90E2"
+                        android:textSize="@dimen/_11sdp"
+                        app:typeface="ProximaNova-Regular.otf" />
+
+                    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                        android:id="@+id/tv_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_commenter_name"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="In the new romantic drama “The Age of Adaline,” the actress plays a woman who suffers the torment of immortality."
+                        android:textColor="#FF000000"
+                        android:textSize="@dimen/_11sdp"
+                        app:typeface="ProximaNova-Regular.otf" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_15sdp">
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:id="@+id/like_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/filled_love_icon"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:text="Liked"
+                    android:textColor="#FF000000"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+
+                <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawableLeft="@drawable/ic_comment"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="Comment"
+                    android:textColor="#FF000000"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="ProximaNova-Regular.otf" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

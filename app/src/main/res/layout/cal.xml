@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cal"
+    android:layout_width="@dimen/_56sdp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:background="@drawable/eventup_selector"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+        android:id="@+id/event_date"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.21"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:text="32"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:background="@android:color/white"
+
+        />
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+        android:id="@+id/event_month_year"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/_1sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:text="DEC 2017"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+        android:id="@+id/tv_event_time"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/eventdown_selector"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_2sdp"
+        android:text="12:56 Pm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_9sdp" />
+
+
+</LinearLayout>

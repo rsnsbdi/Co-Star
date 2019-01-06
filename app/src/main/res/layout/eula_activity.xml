@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signin_gradient">
+
+            <com.costar.talkwithidol.ext.widgets.fonts.MoonBoldTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_14sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonLayout"
+            android:layout_below="@+id/header"
+            android:layout_margin="17dp"
+            android:fillViewport="true">
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:textAlignment="textStart"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_12sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp">
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                android:id="@+id/btn_agree"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_selector"
+                android:enabled="true"
+                android:text="I AGREE"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                android:id="@+id/btn_decline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/btn_agree"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/red_selec"
+                android:enabled="true"
+                android:text="DECLINE"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color">
+
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Loading..."
+            android:textAllCaps="true"
+            android:textColor="@color/blue1"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="gone"
+            app:typeface="ProximaNova-Bold.otf" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

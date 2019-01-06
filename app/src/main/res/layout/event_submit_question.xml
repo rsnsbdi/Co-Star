@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgrond_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/txt_forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Submit Your Question"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:textSize="@dimen/_11sdp"
+            android:text="Submit your question and be a part of this live event! "
+            android:textColor="@android:color/white"
+            app:typeface="ProximaNova-Regular.otf" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+
+            android:id="@+id/tv_message"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_1"
+            android:textSize="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#CCFFFFFF"
+            app:typeface="ProximaNova-Regular.otf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:scaleType="fitCenter"
+            app:riv_oval="true"
+            android:id="@+id/iv_auther_image"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+
+
+            />
+        <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+            app:typeface="ProximaNova-Regular.otf"
+            android:id="@+id/tv_question"
+            android:layout_toRightOf="@+id/iv_auther_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Start Writing your questions here.  It can be anything that you want to ask to your celebrity."
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/submit"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/_10sdp"
+            android:layout_alignTop="@+id/submit" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontButton
+            app:typeface="ProximaNova-Regular.otf"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/button_selector"
+           android:layout_centerVertical="true"
+            android:backgroundTint="@color/red1"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_11sdp"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

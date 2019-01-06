@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_gradient"
+
+        >
+
+    <RelativeLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobileno"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="18dp">
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Verify your number"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_12sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_dob"
+            android:layout_marginLeft="28dp"
+
+            android:layout_marginRight="28dp">
+
+            <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/rounded_corner_edittext"
+                android:gravity="center_horizontal"
+                android:hint="ENTER THE CODE"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_12sdp"
+                app:typeface="ProximaNova-Regular.otf" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_code"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="28dp">
+
+
+            <com.costar.talkwithidol.ext.widgets.fonts.ProxiBoldButton
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/button_selector"
+                android:shadowRadius="3"
+                android:text="SEND"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_10sdp"
+        android:backgroundTint="#FFF"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/ic_close" />
+</RelativeLayout>

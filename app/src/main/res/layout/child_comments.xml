@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/main_color"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/toolbar_notification" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/_60sdp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rl_comment"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#323232"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/_3sdp"
+            android:scaleType="fitCenter"
+            app:riv_oval="true" />
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontEditText
+            android:id="@+id/et_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/submit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_reply"
+            android:layout_toRightOf="@+id/iv_profile"
+            android:background="@android:color/transparent"
+            android:hint="Whats on your mind?"
+            android:inputType="textAutoCorrect|textMultiLine"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/_10sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+        <com.costar.talkwithidol.ext.widgets.fonts.FontTextView
+            android:id="@+id/btn_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="REPLY"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/_11sdp"
+            app:typeface="ProximaNova-Regular.otf" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

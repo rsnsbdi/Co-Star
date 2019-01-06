@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>Profile</item>
+        <item>Channels</item>
+        <item>Preferences</item>
+        <item>Account</item>
+    </string-array>
+
+
+    <string-array name="channels">
+        <item>Home</item>
+        <item>Events</item>
+        <item>Videos</item>
+        <item>News</item>
+        <item>Community</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                   android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back"/>
+
+                <ImageView
+                    android:id="@+id/tv_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                   android:src="@drawable/shopping_bag_icon"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
